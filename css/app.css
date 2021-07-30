@@ -289,10 +289,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  padding: 91px 0 0 0;
-}
-
 .btn {
   display: flex;
   align-items: center;
@@ -349,18 +345,23 @@ body {
 }
 header {
   padding: 22px 0;
-  background: #022859;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 200;
+  background: transparent;
 }
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.nav-up {
+  background: #022859;
+  position: fixed;
 }
 
 .logo {
@@ -448,7 +449,7 @@ header .container {
 
 .section_main {
   background: #022859;
-  padding: 50px 0 15px 0;
+  padding: 143px 0 40px 0;
   position: relative;
 }
 .section_main:before {
@@ -470,35 +471,35 @@ header .container {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  animation: circle 2s linear infinite alternate;
+  animation: circle 2s linear 1 alternate forwards;
 }
 .section_main .container .circle_anim.circle_white1 {
   bottom: 249px;
   right: 556px;
   background: #fff;
   z-index: 20;
-  animation: circle_white1 3.5s linear infinite alternate;
+  animation: circle_white1 3.5s linear 1 alternate forwards;
 }
 .section_main .container .circle_anim.circle_white2 {
   top: 250px;
   right: 200px;
   background: #fff;
   z-index: 20;
-  animation: circle_white2 7s linear infinite alternate 0.5s;
+  animation: circle_white2 6s linear 1 alternate 0.5s forwards;
 }
 .section_main .container .circle_anim.circle_orange1 {
   right: 460px;
   bottom: 93px;
   background: #F29F05;
   z-index: 20;
-  animation: circle_orange1 4s linear infinite alternate;
+  animation: circle_orange1 4s linear 1 alternate forwards;
 }
 .section_main .container .circle_anim.circle_orange2 {
   top: 60px;
   right: 450px;
   background: #F29F05;
   z-index: 20;
-  animation: circle_orange2 18s linear infinite alternate 1s;
+  animation: circle_orange2 12s linear 1 alternate 1s forwards;
 }
 @keyframes circle_white1 {
   0% {
@@ -529,7 +530,7 @@ header .container {
     transform: scale(0);
   }
   100% {
-    transform: scale(40);
+    transform: scale(46);
   }
 }
 .section_main .main_title {
@@ -552,9 +553,22 @@ header .container {
 .section_main .right_side {
   position: relative;
   z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section_main .right_side img {
   display: block;
+}
+.section_main .right_side .movingImg {
+  position: relative;
+  z-index: 20;
+}
+.section_main .right_side .dots {
+  position: absolute;
+  top: 135px;
+  right: 327px;
+  z-index: 18;
 }
 
 .main_wrapper {

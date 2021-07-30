@@ -1,4 +1,15 @@
 $( document ).ready(function() {
+     $(function() {
+      menu_top = $('header').offset().top;
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > menu_top) { 
+          $("header").addClass("nav-up");
+        } else {
+          $("header").removeClass("nav-up");
+        }
+      });
+    });
+
     var elemWrap = $("body");
     var elemMove = $(".movingImg");
     function showAllObjects (object) {

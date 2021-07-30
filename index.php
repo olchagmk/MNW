@@ -16,7 +16,8 @@
 						</a>
 					</div>
 					<div class="right_side">
-						<img src="img/main_person.png" alt="" class="movingImg">
+						<img src="img/head.png" alt="" class="movingImg">
+						<img src="img/dots.png" alt="" class="dots">
 					</div>
 				</div>
 				<div class="circle_anim circle_white1"></div>

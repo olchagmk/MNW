@@ -50,7 +50,7 @@
            </ul>
            <div class="btn_wrapper">
                <a href="#" class="btn btn_callback">
-                   <span>Оставить заявку</span>
+                   <span>Оставить&#160;заявку</span>
                    <img src="img/mail.svg" alt="">
                </a>
            </div>
