@@ -5,10 +5,10 @@
 			<div class="container">
 				<div class="main_wrapper">
 					<div class="left_side">
-						<p class="main_title">
+						<p class="main_title" data-aos="fade-down" data-aos-duration="1200">
 							Ваша команда <br> веб-разработчиков
 						</p>
-						<p class="main_descr">
+						<p class="main_descr" data-aos="fade-up" data-aos-duration="1200">
 							Верстка и фронтенд для бизнеса и фрилансеров
 						</p>
 						<a href="#" class="btn btn_orange">

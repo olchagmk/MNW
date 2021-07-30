@@ -7,10 +7,10 @@
     <meta name="keywords" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="libs/fontawesome/all.min.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="css/app.css">
+    
     
 
 </head>
