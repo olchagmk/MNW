@@ -105,7 +105,7 @@
 					</span>
 				</div>
 				<div class="clients">
-					<div class="client_item" data-aos="fade-up">
+					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
 						<img src="img/clients_1.png" alt="" class="clients_img">
 						<p class="client_title">
 							Для бизнеса без отдела разработки:
@@ -114,7 +114,7 @@
 							Возьмем на себя все ваши проекты по разработке, а также проконсультируем по интересующим вас вопросам.
 						</p>
 					</div>
-					<div class="client_item" style="margin-bottom: -100px;" data-aos="fade-up">
+					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
 						<img src="img/clients_2.png" alt="" class="clients_img">
 						<p class="client_title">
 							Для компаний, у которых есть штатные разработчики:
@@ -123,7 +123,7 @@
 							Возьмем на себя часть ваших задач, ускорим их выполнение и избавим вас от горящих дедлайнов.
 						</p>
 					</div>
-					<div class="client_item" style="margin-bottom: -200px;" data-aos="fade-up">
+					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
 						<img src="img/clients_3.png" alt="" class="clients_img">
 						<p class="client_title">
 							Для веб-дизайнеров:
@@ -177,7 +177,6 @@
 				</div>
 				<img src="img/how_head.png" alt="" class="movingImg">
 				<img src="img/dots.png" alt="" class="dots">
-				<div class="circle_anim circle_white1"></div>
 				<div class="circle_anim circle_white2"></div>
 				<div class="circle_anim circle_orange1"></div>
 				<div class="circle_anim circle_orange2"></div>
@@ -243,7 +242,7 @@
 					</span>
 				</div>
 				<div class="privileges_block">
-					<div class="privilege_item" data-aos="fade-up" data-aos-duration="600">
+					<div class="privilege_item" data-aos="fade-up" data-aos-offset="350px">
 						<img src="img/privilege_1.png" alt="">
 						<p class="privilege_title">
 							Индивидуально организовываем работу с каждым клиентом
@@ -252,7 +251,7 @@
 							Находим особый подход к каждому заказчику, в зависимости от его потребностей.
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-duration="800">
+					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="350px">
 						<img src="img/privilege_2.png" alt="">
 						<p class="privilege_title">
 							Учитываем ваш бюджет
@@ -261,7 +260,7 @@
 							Подбираем пакет услуг под любой кошелек и строим гибкую ценовую политику, ориентированную на интересы клиента.
 						</p>
 					</div>
-					<div class="privilege_item" data-aos="fade-up" data-aos-duration="1000">
+					<div class="privilege_item" data-aos="fade-up" data-aos-offset="350px">
 						<img src="img/privilege_3.png" alt="">
 						<p class="privilege_title">
 							Всегда соблюдаем сроки
@@ -270,7 +269,7 @@
 							Ваш проект точно будет сдан вовремя. В противном случае — выплатим неустойку
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-duration="1200">
+					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="350px">
 						<img src="img/privilege_4.png" alt="">
 						<p class="privilege_title">
 							Предоставляем бесплатное постпроектное обслуживание
