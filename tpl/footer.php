@@ -55,6 +55,7 @@
 <script src="libs/aos/aos.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/scroll_privilegues.js"></script>
 <script>
 	AOS.init();
 </script>

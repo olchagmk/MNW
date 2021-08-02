@@ -1214,6 +1214,7 @@ header .container {
 
 .section_privileges {
   padding: 100px 0 183px 0;
+  min-height: 847px;
 }
 .section_privileges .title_block {
   margin: 0 0 50px;

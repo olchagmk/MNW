@@ -242,7 +242,7 @@
 					</span>
 				</div>
 				<div class="privileges_block">
-					<div class="privilege_item" data-aos="fade-up" data-aos-offset="350px">
+					<div class="privilege_item" data-aos="fade-up" data-aos-offset="500px">
 						<img src="img/privilege_1.png" alt="">
 						<p class="privilege_title">
 							Индивидуально организовываем работу с каждым клиентом
@@ -251,7 +251,7 @@
 							Находим особый подход к каждому заказчику, в зависимости от его потребностей.
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="350px">
+					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="500px">
 						<img src="img/privilege_2.png" alt="">
 						<p class="privilege_title">
 							Учитываем ваш бюджет
@@ -260,7 +260,7 @@
 							Подбираем пакет услуг под любой кошелек и строим гибкую ценовую политику, ориентированную на интересы клиента.
 						</p>
 					</div>
-					<div class="privilege_item" data-aos="fade-up" data-aos-offset="350px">
+					<div class="privilege_item" data-aos="fade-up" data-aos-offset="500px">
 						<img src="img/privilege_3.png" alt="">
 						<p class="privilege_title">
 							Всегда соблюдаем сроки
@@ -269,7 +269,7 @@
 							Ваш проект точно будет сдан вовремя. В противном случае — выплатим неустойку
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="350px">
+					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="500px">
 						<img src="img/privilege_4.png" alt="">
 						<p class="privilege_title">
 							Предоставляем бесплатное постпроектное обслуживание
