@@ -33,15 +33,15 @@ $( document ).ready(function() {
     moveAll(elemMove);
 
     $(".content").click(function(){
-        $(".mob-nav").removeClass("is-active");
-        $(".menu-box").removeClass("is-active");
+        $(".mob_nav").removeClass("is-active");
+        $(".menu_box").removeClass("is-active");
         $(".hamburger").removeClass("is-active");
     });
     //menu
-    $(".menu-box").click(function(){
+    $(".menu_box").click(function(){
         $(this).toggleClass("is-active");
         $(this).find('.hamburger').toggleClass("is-active");
-        $('.mob-nav').toggleClass('is-active');
+        $('.mob_nav').toggleClass('is-active');
     });
     //sliders
     $('.carousel').not('.unslick').each(function() {
@@ -58,17 +58,20 @@ $( document ).ready(function() {
         slickInduvidual.slick({
             infinite: false,
             arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            infinite: true,
             slidesToShow: +$(this).attr('data-items-xl'),
             slidesToScroll: +$(this).attr('data-scroll-xl'),
             responsive: [{
-                breakpoint: 1200,
+                breakpoint: 1920,
                 settings: {
                     slidesToShow: +$(this).attr('data-items-xl'),
                     slidesToScroll: +$(this).attr('data-scroll-xl'),
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 1365,
                 settings: {
                     slidesToShow: +$(this).attr('data-items-lg'),
                     slidesToScroll: +$(this).attr('data-scroll-lg'),
