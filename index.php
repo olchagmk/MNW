@@ -117,13 +117,15 @@
 						</p>
 					</div>
 					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
-						<img src="img/clients_2.png" alt="" class="clients_img">
-						<p class="client_title">
-							Для компаний, у которых есть штатные разработчики:
-						</p>
-						<p class="client_descr">
-							Возьмем на себя часть ваших задач, ускорим их выполнение и избавим вас от горящих дедлайнов.
-						</p>
+						<div class="wrapper">
+							<img src="img/clients_2.png" alt="" class="clients_img">
+							<p class="client_title">
+								Для компаний, у которых есть штатные разработчики:
+							</p>
+							<p class="client_descr">
+								Возьмем на себя часть ваших задач, ускорим их выполнение и избавим вас от горящих дедлайнов.
+							</p>
+						</div>
 					</div>
 					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
 						<img src="img/clients_3.png" alt="" class="clients_img">
@@ -141,10 +143,10 @@
 			<div class="container">
 				<div class="title_block" data-aos="fade-left">
 					<p class="title">
-						С помощью чего мы это делаем:
+						С помощью чего <br> мы это делаем:
 					</p>
 					<span class="title_before">
-						С помощью чего мы это делаем:
+						С помощью чего <br> мы это делаем:
 					</span>
 				</div>
 				<div class="how_block">
@@ -180,14 +182,14 @@
 				<img src="img/how_head.png" alt="" class="movingImg">
 				<img src="img/how_head.png" alt="" class="mob_head">
 				<img src="img/dots.png" alt="" class="dots">
-				<div class="circle_anim circle_white2"></div>
-				<div class="circle_anim circle_orange1"></div>
-				<div class="circle_anim circle_orange2"></div>
+				<div class="circle_anim howAnim"></div>
+				<div class="circle_anim howAnim2"></div>
+				<div class="circle_anim howAnim3"></div>
 			</div>
 		</div>
 		<div class="section section_about">
 			<div class="container">
-				<div class="about_block" data-aos="flip-right">
+				<div class="about_block" data-aos="fade-down">
 					<div class="about_left">
 						<div class="title_block">
 							<p class="title">
@@ -244,8 +246,8 @@
 						За что нас любят:
 					</span>
 				</div>
-				<div class="privileges_block">
-					<div class="privilege_item" data-aos="fade-up" data-aos-offset="500px">
+				<div class="privileges_block" data-aos="fade-up" data-aos-offset="500px">
+					<div class="privilege_item" >
 						<img src="img/privilege_1.png" alt="">
 						<p class="privilege_title">
 							Индивидуально организовываем работу с каждым клиентом
@@ -254,7 +256,7 @@
 							Находим особый подход к каждому заказчику, в зависимости от его потребностей.
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="500px">
+					<div class="privilege_item privilege_item__inner">
 						<img src="img/privilege_2.png" alt="">
 						<p class="privilege_title">
 							Учитываем ваш бюджет
@@ -263,7 +265,7 @@
 							Подбираем пакет услуг под любой кошелек и строим гибкую ценовую политику, ориентированную на интересы клиента.
 						</p>
 					</div>
-					<div class="privilege_item" data-aos="fade-up" data-aos-offset="500px">
+					<div class="privilege_item">
 						<img src="img/privilege_3.png" alt="">
 						<p class="privilege_title">
 							Всегда соблюдаем сроки
@@ -272,7 +274,7 @@
 							Ваш проект точно будет сдан вовремя. В противном случае — выплатим неустойку
 						</p>
 					</div>
-					<div class="privilege_item privilege_item__inner" data-aos="fade-up" data-aos-offset="500px">
+					<div class="privilege_item privilege_item__inner">
 						<img src="img/privilege_4.png" alt="">
 						<p class="privilege_title">
 							Предоставляем бесплатное постпроектное обслуживание
@@ -399,24 +401,24 @@
 					</span>
 				</div>
 				<div class="slider_wrapper">
-					<div class="project_slider carousel" data-items-xl="3" data-items-lg="3" data-items-md="3" data-items-sm="1" data-scroll-xl="1" data-scroll-lg="1" data-scroll-md="1" data-scroll-sm="1" data-slick='{"dots": false, "fade": false}'>
+					<div class="project_slider carousel" data-items-xl="3" data-items-lg="3" data-items-md="1" data-items-sm="1" data-scroll-xl="1" data-scroll-lg="1" data-scroll-md="1" data-scroll-sm="1" data-slick='{"dots": false, "fade": false}'>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_img.jpg" alt="">
+							<img src="img/slider_lorem.jpg" alt="">
 						</div>
 					</div>
 					<div class="section__sliderNav--arrows">
@@ -484,8 +486,8 @@
 				<img src="img/callback_head.png" alt="" class="movingImg">
 				<img src="img/callback_head.png" alt="" class="mob_head">
 				<img src="img/dots_yellow.png" alt="" class="dots">
-				<div class="circle_anim circle_blue"></div>
-				<div class="circle_anim circle_orange"></div>
+				<div class="circle_anim callbackAnim circle_blue"></div>
+				<div class="circle_anim callbackAnim2 circle_orange"></div>
 			</div>
 		</div>
 	</section>

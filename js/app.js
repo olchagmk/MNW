@@ -1,4 +1,28 @@
 $( document ).ready(function() {
+
+    //Animation HOW
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > $(".section_how").offset().top) {
+            $(".howAnim").addClass('circle_white2');
+            $(".howAnim2").addClass('circle_orange1');
+            $(".howAnim3").addClass('circle_orange2');
+        } else {
+          $(".howAnim").removeClass("circle_white2");
+          $(".howAnim2").removeClass("circle_orange1");
+          $(".howAnim3").removeClass("circle_orange2");
+        }
+    });
+
+    //Animation Callback
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > $(".section_callback").offset().top) {
+            $(".callbackAnim").addClass('circle_blue');
+            $(".callbackAnim2").addClass('circle_orange');
+        } else {
+          $(".callbackAnim").removeClass("circle_blue");
+          $(".callbackAnim2").removeClass("circle_orange");
+        }
+    });
     //Modal
     document.getElementById('btn-modal').addEventListener('click', function() {
       document.getElementById('overlay').classList.add('is-visible');
