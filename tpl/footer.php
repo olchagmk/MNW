@@ -51,6 +51,27 @@
     		</div>
     	</div>
     </footer>
+
+ <!-- MODAL -->
+<div class="overlay" id="overlay"></div>
+<div class="modal" id="modal">
+	<button class="modal-close-btn" id="close-btn">
+		<img src="img/close.png" alt="">
+	</button>
+	<div class="modal_body">
+		<div class="left_side">
+			<img src="img/modal_accept.png" alt="">
+		</div>
+		<div class="right_side">
+			<p class="title">
+				Ваша заявка принята!
+			</p>
+			<p class="descr">
+				Мы свяжемся с вами в ближайшее время. Спасибо!
+			</p>
+		</div>
+	</div>
+</div>
 <script src="libs/jquery/jquery-2.2.4.min.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="libs/slick/slick.min.js"></script>

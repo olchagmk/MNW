@@ -33,7 +33,7 @@
 						Написать нам
 					</a>
 				</div>
-				<img src="img/error_head.png" alt="" class="error_head">
+				<img src="img/error_head.png" alt="" class="mob_head">
 				<img src="img/error_head.png" alt="" class="movingImg">
 				<img src="img/dots.png" alt="" class="dots">
 				<div class="circle_anim circle_white1"></div>

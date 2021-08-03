@@ -11,12 +11,13 @@
 						<p class="main_descr" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100px">
 							Верстка и фронтенд для бизнеса и фрилансеров
 						</p>
-						<a href="#" class="btn btn_orange">
+						<a href="#" class="btn btn_orange" id="btn-modal">
 							Оставить заявку
 						</a>
 					</div>
 					<div class="right_side">
 						<img src="img/head.png" alt="" class="movingImg">
+						<img src="img/head.png" alt="" class="mob_head">
 						<img src="img/dots.png" alt="" class="dots">
 					</div>
 				</div>
@@ -24,6 +25,7 @@
 				<div class="circle_anim circle_white2"></div>
 				<div class="circle_anim circle_orange10"></div>
 				<div class="circle_anim circle_orange2"></div>
+				<div class="circle_anim circle_orange_md"></div>
 			</div>
 		</div>
 		<div class="section section_services">
@@ -38,12 +40,12 @@
 				</div>
 				<div class="services" data-aos="fade-down">
 					<div class="service_item">
-						<div class="service_item__header" style="background: url(img/services_1.jpg) center no-repeat;background-size: cover;padding: 0 0 0 48px; min-height: 145px;">
+						<div class="service_item__header">
 							<p>
 								Разработка <br> “с нуля”
 							</p>
 						</div>
-						<div class="service_item__body" style="min-height: 325px;">
+						<div class="service_item__body">
 							<p class="descr">
 								Создадим с чистого листа:
 								<span>Сайты (лендинги, многостраничники, интернет-магазины)</span>
@@ -60,10 +62,10 @@
 						</div>
 					</div>
 					<div class="service_item">
-						<div class="service_item__header" style="background: url(img/services_2.jpg) center no-repeat;background-size: cover;padding: 0 0 0 37px; min-height: 230px;">
+						<div class="service_item__header">
 							<p>Доработка и поддержка <br> готовых решений</p>
 						</div>
-						<div class="service_item__body" style="min-height: 240px;">
+						<div class="service_item__body">
 							<p class="descr">
 								Исправим, переработаем или доделаем то, что уже было начато до нас
 							</p>
@@ -76,10 +78,10 @@
 						</div>
 					</div>
 					<div class="service_item">
-						<div class="service_item__header"  style="background: url(img/services_3.jpg) center no-repeat;background-size: cover;padding: 0 0 0 66px; min-height: 199px;">
+						<div class="service_item__header">
 							<p>Консалтинг</p>
 						</div>
-						<div class="service_item__body" style="min-height: 271px;">
+						<div class="service_item__body">
 							<p class="descr">
 								Поможем выбрать технологии для реализации ваших задумок
 							</p>
@@ -98,10 +100,10 @@
 			<div class="container">
 				<div class="title_block" data-aos="fade-left">
 					<p class="title">
-						Для кого мы это делаем:
+						Для кого <br> мы это делаем:
 					</p>
 					<span class="title_before">
-						Для кого мы это делаем:
+						Для кого <br> мы это делаем:
 					</span>
 				</div>
 				<div class="clients">
@@ -176,6 +178,7 @@
 					</div>
 				</div>
 				<img src="img/how_head.png" alt="" class="movingImg">
+				<img src="img/how_head.png" alt="" class="mob_head">
 				<img src="img/dots.png" alt="" class="dots">
 				<div class="circle_anim circle_white2"></div>
 				<div class="circle_anim circle_orange1"></div>
@@ -283,7 +286,7 @@
 		</div>
 		<div class="section section_steps">
 			<div class="container">
-				<div class="title_block" data-aos="fade-left">
+				<div class="title_block" data-aos="fade-left" data-aos-offset="50px">
 					<p class="title">
 						Этапы работы:
 					</p>
@@ -292,7 +295,7 @@
 					</span>
 				</div>
 				<div class="steps_block">
-					<div class="step_item" data-aos="fade-down" data-aos-duration="1000">
+					<div class="step_item" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="50px">
 						<div class="step_numder">
 							<img src="img/01.svg" alt="">
 						</div>
@@ -322,7 +325,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="step_item" data-aos="fade-down" data-aos-duration="1500">
+					<div class="step_item" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="50px">
 						<div class="step_numder">
 							<img src="img/02.svg" alt="">
 						</div>
@@ -367,7 +370,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="step_item" data-aos="fade-down" data-aos-duration="2000">
+					<div class="step_item" data-aos="fade-down" data-aos-duration="2000" data-aos-offset="50px">
 						<div class="step_numder">
 							<img src="img/03.svg" alt="">
 						</div>
@@ -396,7 +399,7 @@
 					</span>
 				</div>
 				<div class="slider_wrapper">
-					<div class="project_slider carousel" data-items-xl="3" data-items-lg="1" data-items-md="1" data-items-sm="1" data-scroll-xl="1" data-scroll-lg="1" data-scroll-md="1" data-scroll-sm="1" data-slick='{"dots": false, "fade": false}'>
+					<div class="project_slider carousel" data-items-xl="3" data-items-lg="3" data-items-md="3" data-items-sm="1" data-scroll-xl="1" data-scroll-lg="1" data-scroll-md="1" data-scroll-sm="1" data-slick='{"dots": false, "fade": false}'>
 						<div class="slider-item">
 							<img src="img/slider_img.jpg" alt="">
 						</div>
@@ -479,6 +482,7 @@
 					</div>
 				</div>
 				<img src="img/callback_head.png" alt="" class="movingImg">
+				<img src="img/callback_head.png" alt="" class="mob_head">
 				<img src="img/dots_yellow.png" alt="" class="dots">
 				<div class="circle_anim circle_blue"></div>
 				<div class="circle_anim circle_orange"></div>
