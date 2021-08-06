@@ -20,4 +20,9 @@ $( document ).ready(function() {
     }
     showAllObjects(elemMove);
     moveAll(elemMove);
+
+    var leftgear = document.getElementById("mob_head");
+        window.addEventListener("scroll", function() {
+        leftgear.style.transform = "rotate(-"+window.pageYOffset / 40 +"deg)";
+    });
 });

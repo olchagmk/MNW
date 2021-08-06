@@ -154,14 +154,30 @@ a {	text-decoration: none;}
 }
 .modal-close-btn {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    img {
+    right: 27px;
+    top: 21px;
+    padding: 0;
+    @include media-max(lg) {
+    	right: 15px;
+    	top: 11px;
+    }
+    @include media-max(md) {
+    	right: 13px;
+    	top: 9px;
+    }
+    svg {
     	display: block;
     	object-fit: contain;
     	transition: 0.3s all ease;
+    	width: 14px;
+    	height: 14px;
+    	rect {
+    		transition: 0.3s all ease;
+    	}
     	&:hover {
-    		transform: scale(1.3);
+    		rect {
+    			fill: #F29F05;
+    		}
     	}
     	@include media-max(lg) {
     		width: 8px;
@@ -277,23 +293,24 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    @include media-max(md) {
+    	padding-left: 30px;
+    	padding-right: 30px;
+    }
 }
-
 @media (min-width:576px) {
     .container {
         max-width: 576px;
         padding: 0 15px;
     }
 }
-
 @media (min-width:768px) {
     .container {
         max-width: 768px;
         padding: 0 70px;
     }
 }
-
 @media (min-width:992px) {
     .container {
         max-width: 992px;
@@ -301,7 +318,6 @@ html {
    		padding-left: 15px;
     }
 }
-
 @media (min-width:1366px) {
     .container {
         max-width: 1190px;
@@ -319,9 +335,6 @@ header {
 	transition: 0.3s all ease;
 	@include media-max(lg) {
 		padding: 14px 0;
-	}
-	@include media-max(md) {
-		padding: 18px 0 10px 0;
 	}
 	.container {
 		display: flex;
@@ -507,8 +520,8 @@ header {
 	visibility: hidden;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	height: calc(100vh - 59px);
-	padding: 75px 0 30px 30px;
+	height: 100vh;
+	padding: 75px 0 75px 30px;
 	background: #F29F05;
 	box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
 	&.is-active {
@@ -639,7 +652,7 @@ header {
 		height:800px;
 		right: 0;
 		top: 15px;
-		background: url('../img/main_bg.png') center no-repeat;
+		background: url('../img/main_bg.png') left no-repeat;
 		background-size: cover;
 		z-index: 1;
 		@include media-max(xl) {
@@ -655,7 +668,7 @@ header {
 			height: 100%;
 			width: 119px;
 			right: -0;
-			background: url('../img/main_bg_mob.png') center no-repeat;
+			background: url('../img/main_bg_mob.png') left no-repeat;
 			background-size: cover;
 		}
 	}
@@ -663,102 +676,119 @@ header {
 		position: relative;
 		.circle_anim {
 			position: absolute;
-			width: 10px;
-			height: 10px;
 			border-radius: 50%;
 			animation: circle 1.5s linear 1 alternate 0.5s forwards;
 			&.circle_white1 {
-				bottom: 65px;
-    			right: 585px;
+				bottom: 44px;
+    			right: 566px;
 				background: #fff;
 				z-index: 20;
 				animation: circle_white_main1 1.5s linear 1 alternate forwards;
+				width: 49px;
+				height: 49px;
 				@include media-max(xl) {
-					animation-name: circle_white_main1_xl;
 					right: 420px;
 				}
 				@include media-max(lg) {
-					animation-name: circle_white_main1_lg;
-					bottom: 27px;
-					right: 312px;
+					bottom: 16px;
+					right: 300px;
+					width: 32px;
+					height: 32px;
 				}
 				@include media-max(md) {
-					animation-name: circle_white_main1_md;
-					bottom: -179px;
-					right: 174px;
+					bottom: -189px;
+					right: 164px;
+					width: 30px;
+					height: 30px;
 				}
 			}
 			&.circle_white2 {
-				top: 54px;
-    			right: 171px;
+				top: -104px;
+				right: 8px;
 				background: #fff;
 				z-index: 20;
 				animation: circle_white_main2 1.5s linear 1 alternate  forwards;
+				width: 330px;
+				height: 330px;
+				@include media-max(xl) {
+					top: 10px;
+					right: 50px;
+				}
 				@include media-max(lg) {
-					animation-name: circle_white_main2_lg;
-					top: 32px;
-   					right: 39px;
+					top: -71px;
+   					right: -63px;
+   					width: 215px;
+   					height: 215px;
 				}
 				@include media-max(md) {
-					animation-name: circle_white_main2_md;
 					top: inherit;
 				    right: inherit;
-				    left: -14px;
-				    bottom: -185px;
+				    left: -88px;
+				    bottom: -258px;
+				    width: 160px;
+					height: 160px;
 				}
 			}
 			&.circle_orange10 {
-				right: 468px;
-   				bottom: -40px;
+				right: 401px;
+   				bottom: -113px;
 				background: #F29F05;
 				z-index: 20;
 				animation: circle_orange_main10 1.5s linear 1 alternate forwards;
+				width: 145px;
+				height: 145px;
 				@include media-max(xl) {
-					animation-name: circle_orange_main10_xl;
 					right: 320px;
 				}
 				@include media-max(lg) {
-					animation-name: circle_orange_main10_lg;
-					bottom: -44px;
-					right: 249px;
+					bottom: -87px;
+					right: 209px;
+					width: 94px;
+					height: 94px;
 				}
 				@include media-max(md) {
-					animation-name: circle_orange_main10_md;
-					bottom: -72px;
+					bottom: -97px;
 				    right: inherit;
-				    left: 88px;
+				    left: 64px;
+				    width: 60px;
+				    height: 60px;
 				}
 			}
 			&.circle_orange2 {
-				top: -84px;
-    			right: 487px;
+				top: -307px;
+    			right: 262px;
 				background: #F29F05;
 				z-index: 20;
 				animation: circle_orange_main2 1.5s linear 1 alternate forwards;
+				width: 462px;
+				height: 462px;
 				@include media-max(xl) {
-					animation-name: circle_orange_main2_xl;
-					right: 300px;
+					right: 100px;
 				}
 				@include media-max(lg) {
-					animation-name: circle_orange_main2_lg;
-					right: 247px;
-					top: -58px;
+					right: 102px;
+					top: -205px;
+					width: 302px;
+					height: 302px;
 				}
 				@include media-max(md) {
-					animation-name: circle_orange_main2_md;
-					right: -24px;
-    				top: 177px;
+					right: -97px;
+    				top: 108px;
+    				width: 152px;
+    				height: 152px;
 				}
 			}
 			&.circle_orange_md {
 				background: #F29F05;
 				z-index: 20;
 				display: none;
+				width: 90px;
+				height: 90px;
 				@include media-max(md) {
 					display: block;
 					animation: circle_orange_md 1.5s linear 1 alternate forwards;
-					bottom: -246px;
-    				right: 115px;
+					bottom: -286px;
+    				right: 75px;
 				}
 			}
 		}
@@ -767,7 +797,7 @@ header {
 				transform: scale(0);
 			}
 			100% {
-				transform: scale(9);
+				transform: scale(1);
 			}
 		}
 		@keyframes circle_white_main1 {
@@ -775,31 +805,7 @@ header {
 				transform: scale(0);
 			}
 			100% {
-				transform: scale(5);
-			}
-		}
-		@keyframes circle_white_main1_xl {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(5);
-			}
-		}
-		@keyframes circle_white_main1_lg {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(3.2);
-			}
-		}
-		@keyframes circle_white_main1_md {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(3);
+				transform: scale(1);
 			}
 		}
 		@keyframes circle_white_main2 {
@@ -807,23 +813,7 @@ header {
 				transform: scale(0);
 			}
 			100% {
-				transform: scale(33);
-			}
-		}
-		@keyframes circle_white_main2_lg {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(21.6);
-			}
-		}
-		@keyframes circle_white_main2_md {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(16);
+				transform: scale(1);
 			}
 		}
 		@keyframes circle_orange_main10 {
@@ -831,31 +821,7 @@ header {
 				transform: scale(0);
 			}
 			100% {
-				transform: scale(14.5);
-			}
-		}
-		@keyframes circle_orange_main10_xl {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(14.5);
-			}
-		}
-		@keyframes circle_orange_main10_lg {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(9.5);
-			}
-		}
-		@keyframes circle_orange_main10_md {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(6);
+				transform: scale(1);
 			}
 		}
 		@keyframes circle_orange_main2 {
@@ -863,31 +829,7 @@ header {
 				transform: scale(0);
 			}
 			100% {
-				transform: scale(46);
-			}
-		}
-		@keyframes circle_orange_main2_xl {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(46);
-			}
-		}
-		@keyframes circle_orange_main2_lg {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(30);
-			}
-		}
-		@keyframes circle_orange_main2_md {
-			0% {
-				transform: scale(0);
-			}
-			100% {
-				transform: scale(15);
+				transform: scale(1);
 			}
 		}
 	}
@@ -1026,9 +968,15 @@ header {
 	@include media-max(md) {
 		padding: 80px 0 0 0;
 	}
+	.title_block {
+		@include media-max(md) {
+			margin: 0 0 0 30px;
+		}
+	}
 	.container {
 		@include media-max(md) {
 			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 	.services {
@@ -1068,6 +1016,9 @@ header {
 			box-shadow: 0px 5px 15px #00000094;
 		}
 		&:first-child {
+			@include media-max(md) {
+				margin: 0 20px 0 30px;
+			}
 			.service_item__header {
 				min-height: 145px;
 				background: url(../img/services_1.jpg) center no-repeat;
@@ -1255,6 +1206,14 @@ header {
 			}
 		}
 	}
+	.bug_for_ios {
+		display: none;
+		min-width: 30px;
+		height: 386px;
+		@include media-max(md) {
+			display: block;
+		}
+	}
 }
 .section_clients {
 	background: #F29F05;
@@ -1285,13 +1244,20 @@ header {
 }
 .clients .client_item:nth-child(2) {
 	margin-top: 100px;
+	.clients_img {
+		@include media-max(md) {
+			width: 136px;
+			height: 197px;
+			top: -98px;
+    		right: 9px;
+		}
+	}
 	.wrapper {
 		@include media-max(md) {
 			width: 100%;
 			max-width: 231px;
 			padding: 108px 15px 30px 26px;
 			min-height: 257px;
-			margin: 0 0 66px;
 			border: 1px solid #FFFFFF;
 		}
 	}
@@ -1311,6 +1277,14 @@ header {
 	margin-top: 200px;
 	@include media-max(md) {
 		margin: 0;
+	}
+	.clients_img {
+		@include media-max(md) {
+			width: 130px;
+			height: 197px;
+			top: -82px;
+    		right: 7px;
+		}
 	}
 }
 .clients {
@@ -1339,13 +1313,19 @@ header {
 			max-width: 231px;
 			padding: 108px 15px 30px 26px;
 			min-height: 257px;
-			margin: 0 0 66px;
+			margin: 0 0 70px;
 		}
 		.client_title {
 			margin: 0 0 15px;
 			font-size: 24px;
 			line-height: 36px;
 			color: #FFFFFF;
+			br {
+				display: none;
+				@include media-max(md) {
+					display: block;
+				}
+			}
 			@include media-max(lg) {
 				font-size: 16px;
 				line-height: 24px;
@@ -1360,6 +1340,12 @@ header {
 			font-size: 18px;
 			line-height: 27px;
 			color: #FFFFFF;
+			br {
+				display: none;
+				@include media-max(md) {
+					display: block;
+				}
+			}
 			@include media-max(lg) {
 				font-size: 12px;
 				line-height: 18px;
@@ -1369,7 +1355,10 @@ header {
 			display: block;
 			position: absolute;
 			right: 25px;
-			top: -70px;
+			top: -95px;
+			width: 213px;
+			height: 277px;
+			object-fit: contain;
 			@include media-max(lg) {
 				width: 136px;
 				height: 182px;
@@ -1379,7 +1368,9 @@ header {
 			}
 			@include media-max(md) {
 				width: 139px;
-				height: 197px;
+				height: 138px;
+				right: 0;
+				top: -44px;
 			}
 		}
 	}
@@ -1457,68 +1448,76 @@ header {
 	}
 	.circle_anim {
 		position: absolute;
-		width: 10px;
-		height: 10px;
 		border-radius: 50%;
 		animation: circle 1.5s linear 1 alternate 0.5s forwards;
 		&.circle_white2 {
-			top: 392px;
-			right: 453px;
+			width: 279px;
+			height: 279px;
+			top: 259px;
+    		right: 317px;
 			background: #fff;
 			z-index: 20;
 			animation: circle_white_how2 1.5s linear 1 alternate  forwards;
 			@include media-max(xl) {
-				animation-name: circle_white_how2_xl;
-				right: 340px;
+				right: 250px;
 			}
 			@include media-max(lg) {
-				animation-name: circle_white_how2_lg;
-				right: 273px;
-				top: 282px;
+				right: 195px;
+				top: 188px;
+				width: 167px;
+				height: 167px;
 			}
 			@include media-max(md) {
-				animation-name: circle_white_how2_md;
-				right: -12px;
-    			top: 331px;
+				right: -107px;
+    			top: 238px;
+    			width: 200px;
+    			height: 200px;
 			}
 		}
 		&.circle_orange1 {
-			top: 594px;
-			right: 544px;
+			width: 49px;
+			height: 49px;
+			top: 575px;
+			right: 527px;
 			background: #F29F05;
 			z-index: 20;
 			animation: circle_orange_how1 1.5s linear 1 alternate forwards;
 			@include media-max(xl) {
-				animation-name: circle_orange_how1_xl;
 				top: 800px;
 			}
 			@include media-max(lg) {
-				animation-name: circle_orange_how1_lg;
-				right: 329px;
-				top: 403px;
+				width: 29px;
+				height: 29px;
+				right: 319px;
+				top: 376px;
 			}
 			@include media-max(md) {
-				animation-name: circle_orange_how1_md;
-				right: 139px;
-				top: 517px;
+				right: 133px;
+				top: 512px;
 				background: #fff;
+				width: 22px;
+				height: 22px;
 			}
 		}
 		&.circle_orange2 {
-			top: 458px;
-			right: 145px;
+			width: 474px;
+			height: 474px;
+			top: 227px;
+			right: -89px;
 			background: #F29F05;
 			z-index: 20;
 			animation: circle_orange_how2 1.5s linear 1 alternate forwards;
 			@include media-max(lg) {
-				animation-name: circle_orange_how2_lg;
-				top: 323px;
-    			right: 88px;
+				top: 168px;
+    			right: -48px;
+    			width: 283px;
+    			height: 283px;
 			}
 			@include media-max(md) {
-				animation-name: circle_orange_how2_md;
-				top: 441px;
-    			right: 101px;
+				top: 384px;
+    			right: 43px;
+    			width: 123px;
+    			height: 123px;
 			}
 		}
 	}
@@ -1527,31 +1526,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(27.9);
-		}
-	}
-	@keyframes circle_white_how2_xl {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(27.9);
-		}
-	}
-	@keyframes circle_white_how2_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(16.6);
-		}
-	}
-	@keyframes circle_white_how2_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(20);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_orange_how1 {
@@ -1559,31 +1534,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(4.9);
-		}
-	}
-	@keyframes circle_orange_how1_xl {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(4.9);
-		}
-	}
-	@keyframes circle_orange_how1_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(2.9);
-		}
-	}
-	@keyframes circle_orange_how1_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(2);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_orange_how2 {
@@ -1591,23 +1542,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(47.4);
-		}
-	}
-	@keyframes circle_orange_how2_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(28.3);
-		}
-	}
-	@keyframes circle_orange_how2_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(12.3);
+			transform: scale(1);
 		}
 	}
 }
@@ -1634,6 +1569,7 @@ header {
 	@include media-max(md) {
 		padding: 20px 25px 17px 20px;
 		max-width: 231px;
+		z-index: 31;
 	}
 	&:before,
 	&:after  {
@@ -1883,7 +1819,14 @@ header {
 		width: calc((100% / 4) - 10px);
 	}
 	@include media-max(md) {
-		width: calc(50% - 24px);
+		width: calc(50% - 10px);
+	}
+	&:nth-child(3) {
+		img {
+			@include media-max(lg) {
+				margin: 0 0 16px -7px;
+			}
+		}
 	}
 	img {
 		margin: 0 auto 27px;
@@ -1896,6 +1839,7 @@ header {
 			max-width: 110px;
 			height: 80px;
 			margin-bottom: 15px;
+			margin: 0 0 16px;
 		}
 	}
 	.privilege_title {
@@ -1903,11 +1847,15 @@ header {
 		line-height: 27px;
 		color: #F29F05;
 		margin: 0 0 15px;
-		min-height: 54px;
+		br {
+			display: none;
+			@include media-max(md) {
+				display: block;
+			}
+		}
 		@include media-max(lg) {
 			font-size: 14px;
 			line-height: 21px;
-			min-height: initial;
 		}
 	}
 	.privilege_descr {
@@ -1915,6 +1863,12 @@ header {
 		font-size: 18px;
 		line-height: 27px;
 		color: #022859;
+		br {
+			display: none;
+			@include media-max(md) {
+				display: block;
+			}
+		}
 		@include media-max(lg) {
 			font-size: 12px;
 			line-height: 18px;
@@ -1932,7 +1886,7 @@ header {
 	}
 	.container {
 		@include media-max(md) {
-			padding-right: 0;
+			padding: 0;
 		}
 	}
 	.title_block {
@@ -1941,7 +1895,7 @@ header {
 			margin: 0 0 60px;
 		}
 		@include media-max(md) {
-			margin: 0 0 40px;
+			margin: 0 0 40px 30px;
 		}
 		.title {
 			color: #fff;
@@ -1976,10 +1930,10 @@ header {
 		}
 		@include media-max(md) {
 			min-width: 231px;
-			margin: 0 25px 0 0;
+			margin: 0 20px 0 0;
 			min-height: 292px;
-			&:nth-last-child(1) {
-				margin: 0;
+			&:nth-child(1) {
+				margin: 0 20px 0 30px;
 			}
 		}
 		.step_numder {
@@ -2041,12 +1995,12 @@ header {
 					content: '';
 					position: absolute;
 					background: #F29F05;
-					width: 2px;
-					height: calc(100% + 10px);
+					width: 1px;
+					height: calc(100% + 5px);
 					left: 3px;
-					top: 10px;
+					top: 11px;
 					@include media-max(md) {
-						height: calc(100% + 7px);
+						height: calc(100% + 4px);
 					}
 				}
 				p {
@@ -2062,6 +2016,14 @@ header {
 			}
 		}
 	}
+	.bug_for_ios {
+		display: none;
+		min-width: 30px;
+		height: 292px;
+		@include media-max(md) {
+			display: block;
+		}
+	}
 }
 .section_projects {
 	padding: 102px 0 138px 0;
@@ -2071,6 +2033,14 @@ header {
 	}
 	@include media-max(md) {
 		padding: 78px 0 95px 0;
+	}
+	.title_block {
+		@include media-max(md) {
+			margin: 0 0 40px -35px;
+		}
+		.title_before {
+			color: #FAB32F;
+		}
 	}
 	.container {
 		@include media-max(xl) {
@@ -2102,10 +2072,11 @@ header {
 			margin: 0 auto;
 			margin-top: 5px;
 			position: absolute;
-			top: 50%;
+			top: calc(50% - 35px);
 			transform: translateY(-50%);
 			@include media-max(lg) {
 				max-width: 100%;
+				top: calc(50% - 50px);
 			}
 			img {
 				display: block;
@@ -2126,12 +2097,26 @@ header {
 }
 .project_slider {
 	margin: 0 0 20px;
+	min-height: 550px;
+	@include media-max(xl) {
+		min-height: 450px;
+	}
+	@include media-max(lg) {
+		min-height: 500px;
+	}
 	@include media-max(md) {
 		margin: 0 0 15px;
+		min-height: 375px;
 	}
 	.slider-item {
-		margin: 0 20px;
+		margin: -50px 20px 0 20px;
 		height: 315px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.slider_descr__bottom {
+			display: none;
+		}
 		@include media-max(xl) {
 			height: 200px;
 		}
@@ -2145,7 +2130,10 @@ header {
 			max-width: 100%;
 			object-position: center;
 			object-fit: cover;
-			height: 100%;
+			height: 250px;
+			@include media-max(xl) {
+				height: 200px;
+			}
 		}
 	}
 	.slick-track {
@@ -2159,31 +2147,55 @@ header {
 	}
 	.slick-center {
 		width: 390px !important;
-		height: 450px;
-		position: relative;
-		padding: 17px 17px 0 17px;
+		height: 550px;
+		margin: 0 20px;
+		@include media-max(lg) {
+			margin: 0;
+		}
+		.slider_descr__bottom {
+			display: block;
+		}
 		@include media-max(xl) {
 			width: 300px !important;
-			height: 350px;
+			height: 450px;
 		}
 		@include media-max(lg) {
-			width: calc(100% - 641px) !important;
-			height: 400px;
-			padding: 14px 25px 0 25px;
+			width: 100% !important;
+			height: 500px;
 		}
 		@include media-max(md) {
-			width: calc(100% - 110px) !important;
-			height: 275px;
-			padding: 11px 11px 0 11px;
+			width: 100% !important;
+			height: 350px;
 		}
-		&:before {
-			background: #022859;
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 95%;
-			left: 0;
-			top: 0;
+		.slider_wrap {
+			position: relative;
+			height: 450px;
+			padding: 17px 17px 0 17px;
+			display: block;
+			margin: 0 0 20px;
+			@include media-max(xl) {
+				width: 300px !important;
+				height: 350px;
+			}
+			@include media-max(lg) {
+				width: 100% !important;
+				height: 400px;
+				padding: 14px 25px 0 25px;
+			}
+			@include media-max(md) {
+				width: 100% !important;
+				height: 275px;
+				padding: 11px 11px 0 11px;
+			}
+			&:before {
+				background: #022859;
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 95%;
+				left: 0;
+				top: 0;
+			}
 		}
 		img {
 			position: relative;
@@ -2193,71 +2205,9 @@ header {
 			object-position: center;
 			object-fit: cover;
 			height: 100%;
-
 		}
 	}
 }
-// .project_slider {
-// 	margin: 0 0 20px;
-// 	@include media-max(md) {
-// 		margin: 0 0 15px;
-// 	}
-// 	.slider-item {
-// 		margin: 0 30px;
-// 		@include media-max(xl) {
-// 			margin: 0 20px;
-// 		}
-// 		@include media-max(lg) {
-// 			margin: 0 30px;
-// 		}
-// 		img {
-// 			display: block;
-// 			width: 100%;
-// 			max-width: 100%;
-// 			object-position: center;
-// 			object-fit: cover;
-// 			height: 100%;
-// 		}
-// 	}
-// 	.slick-track {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: space-between;
-// 		visibility: visible;
-// 		@include media-max(md) {
-// 			justify-content: flex-start;
-// 		}
-// 	}
-// 	.slick-center {
-// 		transform: scale(1.2);
-// 		height: 375px;
-// 		padding: 48px 17px 0 17px;
-// 		position: relative;
-// 		@include media-max(lg) {
-// 			transform: scale(1.5);
-//    			height: 275px;
-//    			padding: 60px 14px 0 14px;	
-// 		}
-// 		&:before {
-// 			background: #022859;
-// 			content: '';
-// 			position: absolute;
-// 			width: 100%;
-// 			height: 85%;
-// 			left: 0;
-// 			top: 0;
-// 		}
-// 		img {
-// 			position: relative;
-// 			display: block;
-// 			width: 100%;
-// 			max-width: 100%;
-// 			object-position: center;
-// 			object-fit: cover;
-// 			height: 100%;
-// 		}
-// 	}
-// }
 .section_callback {
 	padding: 120px 0;
 	@include media-max(lg) {
@@ -2333,41 +2283,46 @@ header {
 	}
 	.circle_anim {
 		position: absolute;
-		width: 10px;
-		height: 10px;
 		border-radius: 50%;
 		animation: circle 1.5s linear 1 alternate 0.5s forwards;
 		&.circle_blue {
-			top: 356px;
-    		left: 325px;
+			width: 395px;
+			height: 395px;
+			top: 175px;
+    		left: 136px;
 			background: #022859;
 			z-index: 20;
 			animation: circle_blue 1.5s linear 1 alternate forwards;
 			@include media-max(xl)  {
-				animation-name: circle_blue_xl;
-				left: 180px;
+				left: 0;
+				top: 0;
 			}
 			@include media-max(lg) {
-				animation-name: circle_blue_lg;
-				left: 246px;
-				top: 181px;
+				width: 198px;
+				height: 198px;
+				left: 155px;
+				top: 88px;
 			}
 			@include media-max(md) {
-				animation-name: circle_blue_md;
-				top: -23px;
-				left: 108px;
+				width: 154px;
+				height: 154px;
+				top: -94px;
+				left: 36px;
 			}
 		}
 		&.circle_orange {
-			top: 166px;
-			left: 21px;
+			width: 279px;
+			height: 279px;
+			top: 47px;
+			left: -115px;
 			background: #F29F05;
 			z-index: 20;
 			animation: circle_orange 1.5s linear 1 alternate forwards;
 			@include media-max(lg) {
-				animation-name: circle_orange_lg;
-				top: 89px;
-				left: 91px;
+				width: 140px;
+				height: 140px;
+				top: 22px;
+				left: 28px;
 			}
 			@include media-max(md) {
 				display: none;
@@ -2379,31 +2334,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(40);
-		}
-	}
-	@keyframes circle_blue_xl {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(40);
-		}
-	}
-	@keyframes circle_blue_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(20);
-		}
-	}
-	@keyframes circle_blue_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(15.4);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_orange {
@@ -2411,15 +2342,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(28);
-		}
-	}
-	@keyframes circle_orange_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(14);
+			transform: scale(1);
 		}
 	}
 }
@@ -2478,30 +2401,7 @@ header {
 		height: 27px;
 		margin: 0 0 6px;
 	}
-	input:focus ~ .input-i {
-	  opacity: 0;
-	}
-	.input-i {
-	  position: absolute;
-	  top: 12px;
-	  bottom: 0;
-	  left: 0;
-	  opacity: 1;
-	  transition: all .17s ease-in-out;
-	  z-index: -1;
-	  @include media-max(lg) {
-	  	top: 4px;
-	  }
-	}
-	.input-i i {
-	  color: #F29F05;
-	  font-weight: 500;
-	}
-	input {
-		background: transparent;
-	}
 	input,
-	.input-i,
 	textarea {
 		width: 100%;
 		max-width: 100%;
@@ -2520,6 +2420,42 @@ header {
 		}
 	}
 }
+input:focus ~ .place_holder {
+  opacity: 0;
+}
+.place_holder {
+    z-index: 100;    
+    left: 23px;
+    cursor: text;   
+    position: absolute;
+    top: -2px;
+    width: 100%;    
+    display: none;
+    font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #022859;
+	font-family: 'Oswald';
+	font-style: normal;
+	@include media-max(lg) {
+		font-size: 12px;
+		line-height: 18px;
+		left: 13px;
+		top: 2px;
+	}
+}
+.placeinput input:invalid + .place_holder {
+     display: inline;
+}
+.placeinput {
+    position: relative;
+    overflow: hidden;
+}
+.place_holder span {
+    color: #F29F05;
+    margin: 0 0 0 3px;
+}
+
 .form_input__area {
 	height: 100px;
 	margin: 0 0 20px;
@@ -2746,7 +2682,6 @@ header {
 		top: -175px;
 		right: -300px;
 		z-index: 30;
-		animation: error_head 1.5s linear infinite alternate 0.5s;
 		transform: rotate(-10deg);
 		@include media-max(lg) {
 			width: 650px;
@@ -2761,14 +2696,6 @@ header {
 		    width: 375px;
 		    height: 375px;
 			right: -100px;
-		}
-	}
-	@keyframes error_head {
-		0% {
-			transform: rotate(-10deg);
-		}
-		100% {
-			transform: rotate(10deg);
 		}
 	}
 	.movingImg {
@@ -2809,78 +2736,94 @@ header {
 		border-radius: 50%;
 		animation: circle 1.5s linear 1 alternate 0.5s forwards;
 		&.circle_white1 {
-			bottom: -102px;
-			right: -142px;
+			width: 49px;
+			height: 49px;
+			bottom: -120px;
+			right: -160px;
 			background: #fff;
 			z-index: 20;
 			animation: circle_white1 1.5s linear 1 alternate forwards;
 			@include media-max(lg) {
-				right: 65px;
-    			bottom: -182px;
-				animation-name: circle_white1_lg;
+				width: 52px;
+				height: 52px;
+				right: 45px;
+    			bottom: -203px;
 			}
 			@include media-max(md) {
+				width: 34px;
+				height: 34px;
 				right: inherit;
-			    left: 85px;
-    			bottom: -291px;
-				animation-name: circle_white1_md;
+			    left: 74px;
+    			bottom: -302px;
 			}
 		}
 		&.circle_white2 {
-			top: 187px;
-    		right: 288px;
+			width: 293px;
+			height: 293px;
+			top: 44px;
+    		right: 145px;
 			background: #fff;
 			z-index: 20;
 			animation: circle_white2 1.5s linear 1 alternate  forwards;
 			@include media-max(xl) {
-				right: 250px;
+				right: 100px;
 			}
 			@include media-max(lg) {
-				top: 69px;
-    			right: 164px;
-				animation-name: circle_white2_lg;
+				width: 224px;
+				height: 224px;
+				top: -36px;
+    			right: 55px;
 			}
 			@include media-max(md) {
+				width: 90px;
+				height: 90px;
 				top: inherit;
-    			right: -15px;
-    			bottom: 0;
-				animation-name: circle_white2_md;
+    			right: -59px;
+    			bottom: -42px;
 			}
 		}
 		&.circle_orange1 {
-			right: 25px;
-    		bottom: -175px;
+			width: 199px;
+			height: 199px;
+			right: -67px;
+    		bottom: -270px;
 			background: #F29F05;
 			z-index: 20;
 			animation: circle_orange1 1.5s linear 1 alternate forwards;
 			@include media-max(lg) {
-				right: -5px;
-				bottom: -63px;
-				animation-name: circle_orange1_lg;
+				width: 129px;
+				height: 129px;
+				right: -63px;
+				bottom: -122px;
 			}
 			@include media-max(md) {
-				bottom: -480px;
+				width: 132px;
+				height: 132px;
+				bottom: -209px;
 				right: inherit;
-				left: 22px;
-				animation-name: circle_orange1_md;
+				left: -41px;
 			}
 		}
 		&.circle_orange2 {
-			right: -117px;
-    		top: -6px;
+			width: 566px;
+			height: 566px;
+			right: -398px;
+    		top: -286px;
 			background: #F29F05;
 			z-index: 20;
 			animation: circle_orange2 1.5s linear 1 alternate forwards;
 			@include media-max(lg) {
-				top: -134px;
-				right: -102px;
-				animation-name: circle_orange2_lg;
+				width: 505px;
+				height: 505px;
+				top: -381px;
+				right: -351px;
 			}
 			@include media-max(md) {
+				width: 290px;
+				height: 290px;
 				top: inherit;
-				bottom: -251px;
-    			right: 73px;
-				animation-name: circle_orange2_md;
+				bottom: -391px;
+    			right: -67px;
 			}
 		}
 	}
@@ -2889,23 +2832,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(5);
-		}
-	}
-	@keyframes circle_white1_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(5);
-		}
-	}
-	@keyframes circle_white1_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(3.4);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_white2 {
@@ -2913,23 +2840,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(29);
-		}
-	}
-	@keyframes circle_white2_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(22);
-		}
-	}
-	@keyframes circle_white2_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(9);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_orange1 {
@@ -2937,23 +2848,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(20);
-		}
-	}
-	@keyframes circle_orange1_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(13);
-		}
-	}
-	@keyframes circle_orange1_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(13);
+			transform: scale(1);
 		}
 	}
 	@keyframes circle_orange2 {
@@ -2961,23 +2856,7 @@ header {
 			transform: scale(0);
 		}
 		100% {
-			transform: scale(56);
-		}
-	}
-	@keyframes circle_orange2_lg {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(50);
-		}
-	}
-	@keyframes circle_orange2_md {
-		0% {
-			transform: scale(0);
-		}
-		100% {
-			transform: scale(29);
+			transform: scale(1);
 		}
 	}
 }
@@ -3024,10 +2903,10 @@ footer {
 			.footer_info {
 				li {
 					margin: 0 0 5px;
-					&:nth-last-child(1) {
-						margin: 0;
-					}
 					@include media-max(lg) {
+						margin: 0 0 3px;
+					}
+					&:nth-last-child(1) {
 						margin: 0;
 					}
 					a {
@@ -3038,7 +2917,7 @@ footer {
 						color: #FFFFFF;
 						@include media-max(lg) {
 							font-size: 10px;
-							line-height: 12px;
+							line-height: 9px;
 							display: block;
 						}
 						@include media-max(md) {
@@ -3057,7 +2936,7 @@ footer {
 			align-items: center;
 			justify-content: space-between;
 			@include media-max(md) {
-				align-items: flex-end;
+				align-items: center;
 			}
 			.footer_social {
 				display: flex;
@@ -3065,11 +2944,14 @@ footer {
 				justify-content: space-between;
 				li {
 					margin: 0 50px 0 0;
+					height: 50px;
 					@include media-max(lg) {
 						margin: 0 35px 0 0;
+						height: 23px;
 					}
 					@include media-max(md) {
 						margin: 0 9px 0 0;
+						height: 15px;
 					}
 					&:nth-last-child(1) {
 						margin: 0;
@@ -3145,18 +3027,11 @@ footer {
 		display: block !important;
 	}
 }
-.mob_head {
-	animation: mob_head 1.5s linear infinite alternate 0.5s;
-	transform: rotate(-10deg);
-}
-@keyframes mob_head {
-	0% {
-		transform: rotate(-10deg);
-	}
-	100% {
-		transform: rotate(10deg);
-	}
-}
-::-webkit-scrollbar {
+.services::-webkit-scrollbar {
   width: 0 !important;
+  display: none !important;
+}
+.steps_block::-webkit-scrollbar {
+  width: 0 !important;
+  display: none !important;
 }

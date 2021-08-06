@@ -56,7 +56,10 @@
 <div class="overlay" id="overlay"></div>
 <div class="modal" id="modal">
 	<button class="modal-close-btn" id="close-btn">
-		<img src="img/close.png" alt="">
+		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect y="11.4751" width="16.2284" height="3.5705" rx="1.78525" transform="rotate(-45 0 11.4751)" fill="#022859"/>
+			<rect x="2.52466" width="16.2284" height="3.5705" rx="1.78525" transform="rotate(45 2.52466 0)" fill="#022859"/>
+		</svg>
 	</button>
 	<div class="modal_body">
 		<div class="left_side">
@@ -76,7 +79,6 @@
 <script src="libs/aos/aos.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
-<script src="js/scroll_privilegues.js"></script>
 <script>
 	AOS.init();
 </script>

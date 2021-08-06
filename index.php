@@ -17,7 +17,7 @@
 					</div>
 					<div class="right_side">
 						<img src="img/head.png" alt="" class="movingImg">
-						<img src="img/head.png" alt="" class="mob_head">
+						<img src="img/head.png" alt="" class="mob_head" id="mob_head">
 						<img src="img/dots.png" alt="" class="dots">
 					</div>
 				</div>
@@ -93,6 +93,7 @@
 							</p>
 						</div>
 					</div>
+					<div class="bug_for_ios"></div>
 				</div>
 			</div>
 		</div>
@@ -110,7 +111,7 @@
 					<div class="client_item" data-aos="fade-up" data-aos-offset="50px">
 						<img src="img/clients_1.png" alt="" class="clients_img">
 						<p class="client_title">
-							Для бизнеса без отдела разработки:
+							Для бизнеса<br>без отдела разработки:
 						</p>
 						<p class="client_descr">
 							Возьмем на себя все ваши проекты по разработке, а также проконсультируем по интересующим вас вопросам.
@@ -133,7 +134,7 @@
 							Для веб-дизайнеров:
 						</p>
 						<p class="client_descr">
-							Выполним за вас всю верстку и разработку сайта и избавим от необходимости копаться в коде или использовать конструкторы.
+							Выполним за вас всю верстку и разработку сайта и избавим от необходимости <br> копаться в коде или использовать конструкторы.
 						</p>
 					</div>
 				</div>
@@ -253,22 +254,22 @@
 							Индивидуально организовываем работу с каждым клиентом
 						</p>
 						<p class="privilege_descr">
-							Находим особый подход к каждому заказчику, в зависимости от его потребностей.
+							Находим особый подход к каждому заказчику, в <br> зависимости от его <br>потребностей.
 						</p>
 					</div>
 					<div class="privilege_item privilege_item__inner">
 						<img src="img/privilege_2.png" alt="">
 						<p class="privilege_title">
-							Учитываем ваш бюджет
+							Учитываем ваш <br> бюджет
 						</p>
 						<p class="privilege_descr">
-							Подбираем пакет услуг под любой кошелек и строим гибкую ценовую политику, ориентированную на интересы клиента.
+							Подбираем пакет услуг под <br> любой кошелек и строим гибкую ценовую политику, ориентированную на интересы клиента.
 						</p>
 					</div>
 					<div class="privilege_item">
 						<img src="img/privilege_3.png" alt="">
 						<p class="privilege_title">
-							Всегда соблюдаем сроки
+							Всегда соблюдаем <br> сроки
 						</p>
 						<p class="privilege_descr">
 							Ваш проект точно будет сдан вовремя. В противном случае — выплатим неустойку
@@ -372,7 +373,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="step_item" data-aos="fade-down" data-aos-duration="2000" data-aos-offset="50px">
+					<div class="step_item" data-aos="fade-down" data-aos-duration="2000" data-aos-offset="50px" style="margin: 0;">
 						<div class="step_numder">
 							<img src="img/03.svg" alt="">
 						</div>
@@ -387,6 +388,7 @@
 							</li>
 						</ul>
 					</div>
+					<div class="bug_for_ios"></div>
 				</div>
 			</div>
 		</div>
@@ -403,22 +405,52 @@
 				<div class="slider_wrapper">
 					<div class="project_slider carousel" data-items-xl="3" data-items-lg="3" data-items-md="1" data-items-sm="1" data-scroll-xl="1" data-scroll-lg="1" data-scroll-md="1" data-scroll-sm="1" data-slick='{"dots": false, "fade": false}'>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem2.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem3.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem2.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 						<div class="slider-item">
-							<img src="img/slider_lorem.jpg" alt="">
+							<a href="#" class="slider_wrap">
+								<img src="img/slider_lorem3.jpg" alt="">
+							</a>
+							<p class="slider_descr__bottom">
+								Разработка сайта для строительной <br> компании
+							</p>
 						</div>
 					</div>
 					<div class="section__sliderNav--arrows">
@@ -430,9 +462,6 @@
 						</button>
 					</div>
 				</div>
-				<p class="slider_descr__bottom">
-					Разработка сайта для строительной <br> компании
-				</p>
 			</div>
 		</div>
 		<div class="section section_callback">
@@ -444,16 +473,22 @@
 								Если вы хотите отправить нам проект для его оценки, то воспользуйтесь формой ниже:
 							</p>
 							<div class="form_input">
-								<input type="text" name="name" required="">
-								<label for="name" class="input-i">Ваше имя <i>*</i></label>
+								<label class="placeinput">
+									<input type="text" name="name" required=""/>
+									<div class="place_holder">Ваше имя<span>*</span></div>
+								</label>
 							</div>
 							<div class="form_input">
-								<input type="tel" name="phone" required="">
-								<label for="phone" class="input-i">Номер телефона<i>*</i></label>
+								<label class="placeinput">
+									<input type="tel" name="phone" required="">
+									<div class="place_holder">Номер телефона<span>*</span></div>
+								</label>
 							</div>
 							<div class="form_input">
-								<input type="text" name="mail"  required="">
-								<label for="mail" class="input-i">E-mail<i>*</i></label>
+								<label class="placeinput">
+									<input type="text" name="mail"  required="">
+									<div class="place_holder">E-mail<span>*</span></div>
+								</label>
 							</div>
 							<div class="form_input">
 								<input type="text" name="connect" placeholder="Предпочтительный способ связи">
