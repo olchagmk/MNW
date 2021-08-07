@@ -3737,12 +3737,10 @@ footer .container .footer_right .footer_social li img {
     height: 15px;
   }
 }
-@media (max-width: 767px) {
-  footer .container .footer_right .footer_contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+footer .container .footer_right .footer_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 footer .container .footer_right .footer_contacts li {
   margin: 0 0 10px 0;

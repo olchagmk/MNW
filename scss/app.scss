@@ -2978,11 +2978,9 @@ footer {
 				}
 			}
 			.footer_contacts {
-				@include media-max(md) {
-					display: flex;
-					flex-direction: column;
-					align-items: flex-end;
-				}
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
 				li {
 					margin: 0 0 10px 0;
 					&:nth-last-child(1) {
